@@ -37,8 +37,9 @@ The token and chat ID are never written into any file in this repository. They l
 
 ## Deployment
 
-1. Under **Settings -> Secrets and variables -> Actions**, add `TELEGRAM_TOKEN` and `CHAT_ID` as repository secrets.
-2. Trigger a manual run from the **Actions** tab (**News Aggregator Engine** -> **Run workflow**), or wait for the 6-hour schedule.
+1. Fork this repo.
+2. Under **Settings -> Secrets and variables -> Actions**, add `TELEGRAM_TOKEN` and `CHAT_ID` as repository secrets.
+3. Trigger a manual run from the **Actions** tab (**News Aggregator Engine** -> **Run workflow**), or wait for the 6-hour schedule.
 
 Nothing needs to run locally. To test a change before pushing, run `TELEGRAM_TOKEN=... CHAT_ID=... uv run main.py` (and discard the resulting `sent_stories.json` edit if you don't want it committed).
 
