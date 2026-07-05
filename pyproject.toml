@@ -1,0 +1,7 @@
+[project]
+name = "tsnobisfurceli"
+version = "0.1.0"
+description = "A zero-cost, self-hosted news aggregator that watches Georgian news feeds and pushes new stories to Telegram"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
